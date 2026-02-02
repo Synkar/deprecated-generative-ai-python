@@ -45,7 +45,7 @@ dependencies = [
     "google-ai-generativelanguage==0.6.15",
     "google-api-core",
     "google-api-python-client",
-    "google-auth>=2.15.0",  # 2.15 adds API key auth support
+    "google-auth>=2.15.0,<2.44.0",  # 2.15 adds API key auth support, <2.44 avoids cryptography dep
     "protobuf",
     "pydantic",
     "tqdm",
